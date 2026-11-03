@@ -1,270 +1,952 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Project Title -->
-    <title>Aneel Khan Portfolio</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/icons/fav_icon.png" type="image/x-icon">
-    <!-- Bootstrap CSS File Link -->
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    <!-- CSS File Link -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome CSS Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <!-- Navbar -->
-      <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="">
-            Portfolio<span class="navbar-brand-dev text-light">dev</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aneel Khan — Frontend Developer & Designer. Building modern, responsive digital experiences with HTML, CSS, JavaScript, Bootstrap, and WordPress." />
+  <meta name="author" content="Aneel Khan" />
+
+  <title>Aneel Khan | Frontend Developer &amp; Designer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/icons/fav_icon.png" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#home">AK<span>.</span></a>
+
+      <!-- Mobile toggler -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-1 me-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Download CV button -->
+        <a class="btn-cv" href="./assets/documents/Aneel_Khan_CV.pdf" download>
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+
+    </div>
+  </nav>
+  <!-- /NAVBAR -->
+
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <!-- Left: Text content -->
+        <div class="col-lg-6">
+          <span class="hero-badge reveal">Web Developer &amp; Designer</span>
+
+          <h1 class="hero-name reveal">Aneel Khan</h1>
+
+          <h2 class="hero-tagline reveal">Building Modern Digital<br />Experiences.</h2>
+
+          <p class="hero-intro reveal">
+            A passionate frontend developer crafting clean, responsive websites and intuitive
+            user interfaces. Specialised in HTML, CSS, JavaScript, Bootstrap, and WordPress
+            — turning ideas into polished digital realities.
+          </p>
+
+          <div class="hero-buttons reveal">
+            <a href="#projects" class="btn-primary-custom">
+              <i class="fa-solid fa-briefcase me-2"></i>View My Projects
+            </a>
+            <a href="#contact" class="btn-secondary-custom">
+              <i class="fa-solid fa-paper-plane me-2"></i>Contact Me
+            </a>
+          </div>
+
+          <!-- Tech stack badges -->
+          <div class="tech-stack reveal">
+            <span class="tech-stack-label">Tech Stack:</span>
+            <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="tech-badge"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+            <span class="tech-badge"><i class="fa-brands fa-wordpress"></i> WordPress</span>
+            <span class="tech-badge"><i class="fa-brands fa-php"></i> PHP</span>
+          </div>
+        </div>
+
+        <!-- Right: Portrait image -->
+        <div class="col-lg-6">
+          <div class="hero-img-wrap reveal">
+            <div class="hero-img-bg"></div>
+
+            <div class="hero-img-frame">
+              <img src="./assets/images/hero_img/Portfolio_1.png"
+                   alt="Aneel Khan — Frontend Developer & Designer" />
+            </div>
+
+            <!-- Floating label cards -->
+            <div class="floating-card floating-card-1">
+              <i class="fa-solid fa-code"></i> Frontend Developer
+            </div>
+            <div class="floating-card floating-card-2">
+              <i class="fa-brands fa-wordpress"></i> WordPress Dev
+            </div>
+            <div class="floating-card floating-card-3">
+              <i class="fa-solid fa-lightbulb"></i> Problem Solver
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /HERO -->
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section id="about" class="about-section">
+    <div class="container">
+
+      <!-- Section heading -->
+      <div class="text-center mb-2 reveal">
+        <span class="section-label">Get to Know Me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <hr class="section-divider reveal" />
+
+      <div class="row align-items-center gy-5">
+
+        <!-- Left: Image -->
+        <div class="col-lg-5 col-md-6">
+          <div class="about-img-wrap reveal">
+            <img src="./assets/images/about_img/about_img.png"
+                 alt="Aneel Khan" />
+            <div class="about-img-accent"></div>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="col-lg-7 col-md-6">
+          <h3 class="about-heading reveal">Hello! I'm Aneel Khan</h3>
+
+          <p class="about-text reveal">
+            I'm a passionate and self-driven frontend developer based in Lahore, Pakistan,
+            with a deep interest in building modern, responsive websites and intuitive digital
+            experiences. I specialise in crafting clean, semantic HTML/CSS/JavaScript interfaces
+            and developing custom WordPress solutions tailored to clients' needs.
+          </p>
+
+          <p class="about-text reveal">
+            Currently pursuing my Intermediate at Khawaja Rafique Shaheed College, Lahore,
+            and continuously expanding my skill set — from mastering core frontend technologies
+            to exploring ASP.NET Core MVC and C#. I also have hands-on experience with Figma,
+            graphic design, and Microsoft Office, making me a well-rounded developer and creative.
+          </p>
+
+          <div class="about-info-items reveal">
+            <div class="about-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Lahore, Pakistan</span>
+            </div>
+            <div class="about-info-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span style="color: #25352D; font-weight: 600;">Available for Work</span>
+            </div>
+            <div class="about-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>aneelkhan748@gmail.com</span>
+            </div>
+          </div>
+
+          <a href="#projects" class="btn-primary-custom reveal">
+            <i class="fa-solid fa-arrow-right me-2"></i>View My Projects
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#contact">Contact</a>
-              </li>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /ABOUT -->
+
+
+  <!-- ============================================================
+       SKILLS SECTION
+       ============================================================ -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+
+      <div class="text-center mb-2 reveal">
+        <span class="section-label">What I Work With</span>
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I use to build digital experiences.</p>
+      </div>
+      <hr class="section-divider reveal" />
+
+      <div class="row g-4">
+
+        <!-- Card 1: Frontend Development -->
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h4 class="skill-card-title">Frontend Development</h4>
+            <div class="skill-badges-wrap">
+              <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-badge"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+              <span class="skill-badge"><i class="fa-solid fa-palette"></i> Responsive Design</span>
+              <span class="skill-badge"><i class="fa-solid fa-mobile-screen"></i> Mobile-First</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: CMS & Backend Basics -->
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <h4 class="skill-card-title">CMS &amp; Backend Basics</h4>
+            <div class="skill-badges-wrap">
+              <span class="skill-badge"><i class="fa-brands fa-wordpress"></i> WordPress</span>
+              <span class="skill-badge"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="skill-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+              <span class="skill-badge"><i class="fa-solid fa-plug"></i> WP Plugins</span>
+              <span class="skill-badge"><i class="fa-solid fa-paintbrush"></i> WP Themes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Currently Learning -->
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h4 class="skill-card-title">Currently Learning</h4>
+            <div class="skill-badges-wrap">
+              <span class="skill-badge"><i class="fa-solid fa-code"></i> ASP.NET Core MVC</span>
+              <span class="skill-badge"><i class="fa-solid fa-c"></i> C#</span>
+              <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+              <span class="skill-badge"><i class="fa-solid fa-layer-group"></i> EF Core</span>
+              <span class="skill-badge"><i class="fa-solid fa-table-columns"></i> Razor Views</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Design & Other Tools -->
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <h4 class="skill-card-title">Design &amp; Tools</h4>
+            <div class="skill-badges-wrap">
+              <span class="skill-badge"><i class="fa-brands fa-figma"></i> Figma</span>
+              <span class="skill-badge"><i class="fa-solid fa-image"></i> Graphic Design</span>
+              <span class="skill-badge"><i class="fa-solid fa-file-word"></i> Microsoft Office</span>
+              <span class="skill-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX Basics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /SKILLS -->
+
+
+  <!-- ============================================================
+       EXPERIENCE SECTION
+       ============================================================ -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+
+      <div class="text-center mb-2 reveal">
+        <span class="section-label">Work History</span>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Practical, hands-on development experience in real-world environments.</p>
+      </div>
+      <hr class="section-divider reveal" />
+
+      <div class="timeline">
+
+        <!-- Experience Entry -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="d-flex flex-wrap align-items-start justify-content-between gap-2 mb-2">
+              <div>
+                <p class="timeline-role">WordPress Developer Intern</p>
+                <!-- TODO: Add company name -->
+                <p class="timeline-company">
+                  <i class="fa-solid fa-building me-1"></i>[Company Name]
+                </p>
+              </div>
+              <span class="timeline-date">
+                <i class="fa-regular fa-calendar me-1"></i>June 2025 – June 2026
+              </span>
+            </div>
+
+            <ul class="timeline-desc">
+              <li>Developed and customised WordPress websites for clients, ensuring quality and performance.</li>
+              <li>Designed and implemented responsive page layouts using page builders and custom CSS.</li>
+              <li>Improved website structure, navigation, and visual design to enhance the user experience.</li>
+              <li>Worked with HTML, CSS, and Bootstrap for layout and styling across multiple projects.</li>
+              <li>Gained hands-on practical development experience in a professional team environment.</li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section -->
-      <section id="home" class="hero-section">
-        <div class="container">
-          <div class="row">
-            <div class="hero-content text-light col-md-12 col-lg-6 p-1">
-              <h3 class="hero-heading-1 pb-2">Aneel Khan</h3>
-              <h1 class="hero-heading-2 m-0">Frontend <span style="color: #00b4d8;">Developer</span></h1>
-              <p class="hero-discrip py-4">"Creative Frontend Developer crafting responsive, user-friendly websites with clean code and modern design principles."</p>
-              <a class="btn in-touch-btn text-light shadow mt-2" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+  <!-- /EXPERIENCE -->
+
+
+  <!-- ============================================================
+       EDUCATION SECTION
+       ============================================================ -->
+  <section id="education" class="education-section">
+    <div class="container">
+
+      <div class="text-center mb-2 reveal">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My educational journey and qualifications.</p>
+      </div>
+      <hr class="section-divider reveal" />
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Card 1: Matriculation -->
+        <div class="col-lg-4 col-md-6">
+          <div class="education-card reveal">
+            <div class="education-card-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <div class="hero-img d-flex justify-content-center col-md-12 col-lg-6 p-1">
-              <img class="passport-img img-fluid" src="./assets/images/hero_img/Portfolio_1.png" alt="" width="250px">
-            </div>
+            <h4 class="education-card-degree">Matriculation</h4>
+            <p class="education-card-institution">Private (Self-Study)</p>
+            <p class="education-card-year">
+              <i class="fa-regular fa-calendar"></i> 2022 – 2024
+            </p>
+            <span class="education-badge completed">Completed</span>
           </div>
         </div>
-      </section>
 
-      <!-- About Section -->
-      <section id="about" class="about-section">
-        <div class="container">
-          <div class="row">
-            <div class="about-content text-center col-12 p-1">
-              <h2 class="about-heading px-3 py-3 mx-auto">About Me</h2>
-              <p class="about-descrip pt-2 mb-5">Read more about me and my journey as a frontend developer.</p>
+        <!-- Card 2: Intermediate -->
+        <div class="col-lg-4 col-md-6">
+          <div class="education-card reveal">
+            <div class="education-card-icon">
+              <i class="fa-solid fa-school"></i>
             </div>
-            <div class="about-me-div col-12">
-              <div class="row">
-                <div class="about-me-img-div col-md-12 col-lg-6 pe-3">
-                  <img class="about-me-img img-fluid" src="./assets/images/about_img/about_img.png" alt="">
-                </div>
-                <div class="about-me-content col-md-12 col-lg-6 ps-3">
-                  <h3 class="about-me-heading pb-4">Aneel Khan</h3>
-                  <p class="about-me-descrip">Hello! My name is Aneel. I am a passionate learner with hands-on experience in HTML, CSS, JavaScript, and Figma. I enjoy building responsive and user-friendly websites that not only look good but also perform well. My knowledge of web development allows me to bring creative ideas to life on screen.<br><br>In addition to coding, I am also skilled in Microsoft Word, Excel, and PowerPoint, which help me stay organized and present my work effectively. I have a growing interest in graphic designing and love exploring new design trends and tools to improve my visual creativity.<br><br>I'm also certified in career course of <b>Software Engineer.</b></p>
-                </div>
-              </div>
-            </div>
-            <div class="about-edc-div col-12 mt-5">
-              <div class="row">
-                <div class="about-edc-content col-md-12 col-lg-6 pe-3">
-                  <h3 class="about-edc-heading">Education</h3>
-                  <p class="about-edc-descrip">My educational journey reflects my dedication and self-motivation. I completed my Matriculation privately, which taught me the value of independent learning and responsibility. Currently, I am pursuing Intermediate studies from Khawaja Rafique Shaheed College, where I have recently completed my first-year exams.<br><br>I am now continuing with my second year, aiming to strengthen my academic foundation and prepare for future goals in the tech field. Below is a summary of my education:</p>
-                  <ul>
-                    <li><strong>Matriculation:</strong> Completed privately (2022-2024)</li>
-                    <li><strong>Intermediate:</strong> Khawaja Rafique Shaheed College, Lahore (2024-2026)</li>
-                    <li><strong>Status:</strong> First year completed, currently enrolled in second year</li>
-                  </ul>
-                </div>
-                <div class="about-edc-img-div col-md-12 col-lg-6 ps-3">
-                  <img class="about-edc-img img-fluid" src="./assets/images/about_img/khawaja_clg.png" alt="">
-                </div>
-              </div>
-            </div>
+            <h4 class="education-card-degree">Intermediate (F.Sc / ICS)</h4>
+            <p class="education-card-institution">Khawaja Rafique Shaheed College, Lahore</p>
+            <p class="education-card-year">
+              <i class="fa-regular fa-calendar"></i> 2024 – 2026
+            </p>
+            <span class="education-badge in-progress">In Progress</span>
+            <p class="education-card-note">First year completed — currently in second year.</p>
           </div>
         </div>
-      </section>
 
-      <!-- Skills Section -->
-      <section id="skills" class="skills-section">
-        <div class="container">
-          <div class="row">
-            <div class="skills-content text-center text-light col-12 p-1">
-              <h2 class="skills-heading px-3 py-3 mx-auto">My Skills</h2>
-              <p class="skills-descrip pt-2 mb-5">Here are the technologies and tools I work with to bring ideas to life</p>
+        <!-- Card 3: Certification -->
+        <div class="col-lg-4 col-md-6">
+          <div class="education-card reveal">
+            <div class="education-card-icon">
+              <i class="fa-solid fa-certificate"></i>
             </div>
-            <div class="skills-div col-12">
-              <div class="row">
-                <div class="p-4 col-md-12 col-lg-6 mt-4">
-                  <div class="frontend-div text-center bg-light rounded-3 p-4">
-                    <h3 class="frontend-heading"><i class="fa-solid fa-laptop-code"></i> Frontend Development</h3>
-                    <div class="d-flex flex-wrap justify-content-center">
-                      <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="frontend-data text-decoration-none text-light rounded-5 px-3 py-2 mx-1 mt-4 mb-3">HTMl5</a>
-                      <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="frontend-data text-decoration-none text-light rounded-5 px-3 py-2 mx-1 mt-4 mb-3">CSS3</a>
-                      <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="frontend-data text-decoration-none text-light rounded-5 px-3 py-2 mx-1 mt-4 mb-3">JavaScript</a>
-                      <a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank" class="frontend-data text-decoration-none text-light rounded-5 px-3 py-2 mx-1 mt-4 mb-3">Bootstrap</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="p-4 col-md-12 col-lg-6 mt-4">
-                  <div class="tools-div text-center bg-light rounded-3 p-4">
-                    <h3 class="tools-heading"><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Technologies</h3>
-                    <div class="d-flex flex-wrap justify-content-center">
-                      <a href="https://www.w3schools.com/git/default.asp?remote=github" target="_blank" class="tools-data text-decoration-none text-light rounded-5 px-3 py-2 mx-1 mt-4 mb-3">Git</a>
-                      <a href="https://www.w3schools.com/git/git_remote_getstarted.asp?remote=github" target="_blank" class="tools-data text-decoration-none text-light rounded-5 px-3 py-2 mx-1 mt-4 mb-3">GitHub</a>
-                      <a href="https://code.visualstudio.com/docs" target="_blank" class="tools-data text-decoration-none text-light rounded-5 px-3 py-2 mx-1 mt-4 mb-3">VS Code</a>
-                      <a href="https://help.figma.com/hc/en-us/articles/14563969806359-What-is-Figma" target="_blank" class="tools-data text-decoration-none text-light rounded-5 px-3 py-2 mx-1 mt-4 mb-3">Figma</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h4 class="education-card-degree">Software Engineer Career Course</h4>
+            <!-- TODO: Add institute name -->
+            <p class="education-card-institution">[Institute Name]</p>
+            <p class="education-card-year">
+              <i class="fa-solid fa-star"></i> Professional Certification
+            </p>
+            <span class="education-badge certified">Certified</span>
           </div>
         </div>
-      </section>
 
-      <!-- Project Section -->
-      <section id="projects" class="project-section">
-        <div class="container">
-          <div class="row">
-            <div class="project-content text-center text-light col-12">
-              <h2 class="project-heading px-3 py-3 mx-auto">My Projects</h2>
-              <p class="project-descrip pt-2 mb-5">Here are a few projects I've worked on recently:</p>
-            </div>
-            <div class="projects-div col-12">
-              <div class="row">
-                <div class="amazing-bridges-div col-sm-12 col-md-6 col-lg-4 p-1">
-                  <div class="card mx-auto mt-3" style="width: 18rem;">
-                    <img src="./assets/images/project_img/Amazing_Bridges.png" class="card-img-top" alt="...">
-                    <div class="card-body d-none position-absolute text-center text-light p-2">
-                      <h5 class="card-title">Amazing Bridges</h5>
-                      <p class="card-text">This is my first semester project which was given to me as a task. It contains information about bridges, which I have added. If you want to see this project, click the button below.</p>
-                      <i class="fa-solid fa-arrow-down text-light w-100"></i>
-                      <a href="https://webdeveloper-aneel.github.io/Bridges_Info/" target="_blank" class="btn project-btn text-light">Go Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="voice-vision-div col-sm-12 col-md-6 col-lg-4 p-1">
-                  <div class="card mx-auto mt-3" style="width: 18rem;">
-                    <img src="./assets/images/project_img/The_Voice_of_vision_Church.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body d-none position-absolute text-center text-light p-2">
-                      <h5 class="card-title">The Voice of Vision Church</h5>
-                      <p class="card-text">This website was the first one I created for a client. It only contains information about the church and its members. If you want to see this website, click the button below.</p>
-                      <i class="fa-solid fa-arrow-down text-light w-100"></i>
-                      <a href="https://webdeveloper-aneel.github.io/The_Voice_of_Vision_Church_web/" target="_blank" class="btn project-btn text-light">Go Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      </div>
+
+      <!-- College Image -->
+      <div class="row justify-content-center reveal">
+        <div class="col-lg-8">
+          <div class="college-img-wrap">
+            <img src="./assets/images/about_img/khawaja_clg.png"
+                 alt="Khawaja Rafique Shaheed College, Lahore" />
           </div>
+          <p class="text-center mt-3" style="font-size:0.85rem; color: var(--color-muted);">
+            <i class="fa-solid fa-location-dot me-1" style="color:var(--color-accent);"></i>
+            Khawaja Rafique Shaheed College, Lahore
+          </p>
         </div>
-      </section>
+      </div>
 
-      <!-- Contact Section -->
-      <section id="contact" class="contact-section">
-        <div class="container">
-          <div class="row">
-            <div class="contact-content text-center col-12">
-              <h2 class="contact-heading px-3 py-3 mx-auto">Contact Me</h2>
-              <p class="contact-descrip pt-2 mb-5">Let's discuss your project and bring your ideas to life. I'm always excited to work on new challenges!</p>
+    </div>
+  </section>
+  <!-- /EDUCATION -->
+
+
+  <!-- ============================================================
+       PROJECTS SECTION
+       ============================================================ -->
+  <section id="projects" class="project-section">
+    <div class="container">
+
+      <div class="text-center mb-2 reveal">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">A selection of real-world projects I've built and shipped.</p>
+      </div>
+      <hr class="section-divider reveal" />
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="aspnet">ASP.NET Core</button>
+      </div>
+
+      <!-- Project Cards -->
+      <div class="row g-4">
+
+        <!-- Project 1: James Thew Recipe Website -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="project-card" data-category="aspnet">
+            <!-- Placeholder image (no image file available) -->
+            <div class="project-card-img-placeholder">
+              <i class="fa-solid fa-utensils"></i>
             </div>
-            <div class="contact-information-div-main col-12">
-              <div class="contact-information-div rounded-3 p-4">
-                <div class="row">
-                  <div class="col-md-12 col-lg-6">
-                    <div class="form-div text-light p-4">
-                      <h3 class="contact-form-heading ms-5 mb-4">Enter Your Details</h3>
-                      <form id="contact-form" action="">
-                        <label class="labels ms-5" for="f-name">Enter Your Name</label>
-                        <input class="inputs w-75 rounded-2 ms-5" type="text" name="full-name" id="f-name">
-                        <label class="labels ms-5" for="email">Enter Your Email</label>
-                        <input class="inputs w-75 rounded-2 ms-5" type="email" name="email" id="email">
-                        <label class="labels ms-5" for="message">Enter Your Message</label>
-                        <textarea class="texttarea w-75 rounded-2 ms-5" name="text-msg" id="message" rows="7"></textarea>
-                        <div class="submit-btn-div ps-5">
-                          <input type="submit" value="Send Message" class="btn submit-btn text-dark bg-light mt-3 px-3 py-1">
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-lg-6">
-                    <div class="contact-info text-light p-4">
-                      <h3 class="contact-info-heading ms-5">Contact Information</h3>
-                      <div class="contact-info-links-div d-grid w-50 ms-5 my-4">
-                        <a class="contact-info-links text-decoration-none text-light" href="tel:03294007981" target="_blank"><i class="fa-solid fa-phone"></i> +92-329-4007981</a>
-                        <a class="contact-info-links text-decoration-none text-light" href="https://wa.me/923294007981" target="_blank"><i class="fa-brands fa-whatsapp"></i> +92-329-4007981</a>
-                        <a class="contact-info-links text-decoration-none text-light" href="mailto:aneelkhan748@gmail.com?subject=Contact&body=I%20want%20to%20contact%20you" target="_blank"><i class="fa-solid fa-envelope"></i>  aneelkhan748@gmail.com</a>
-                      </div>
-                      <h3 class="media-links-heading ms-5">Media Links</h3>
-                      <div class="media-links-div d-grid w-50 ms-5 my-4">
-                        <a class="media-links text-decoration-none text-light" href="https://www.linkedin.com/in/webdeveloper-aneel-04532634a" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                        <a class="media-links text-decoration-none text-light" href="https://github.com/Webdeveloper-aneel" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-                        <a class="media-links text-decoration-none text-light" href="https://www.behance.net/Webdeveloper_aneel" target="_blank"><i class="fa-brands fa-square-behance"></i>  Behance</a>
-                        <a class="media-links text-decoration-none text-light" href="https://x.com/Webdeveloper_an" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter(x.com)</a>
-                        <a class="media-links text-decoration-none text-light" href="https://web.facebook.com/profile.php?id=61576007315354" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
-                        <a class="media-links text-decoration-none text-light" href="https://www.instagram.com/webdeveloper_aneel/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+            <div class="project-card-body">
+              <h4 class="project-card-title">James Thew Recipe Website</h4>
+              <p class="project-card-desc">
+                A feature-rich recipe website built with ASP.NET Core MVC, featuring
+                recipe listings, cooking tips, contests, announcements, and user-related
+                functionality with a clean data-driven architecture.
+              </p>
+
+              <div class="project-tech-badges">
+                <span class="project-tech-badge">C#</span>
+                <span class="project-tech-badge">ASP.NET Core MVC</span>
+                <span class="project-tech-badge">Razor Views</span>
+                <span class="project-tech-badge">EF Core</span>
+                <span class="project-tech-badge">SQL Server</span>
+              </div>
+
+              <div class="project-card-actions">
+                <a href="#" class="btn-project btn-project-primary"
+                   title="Project URL — TODO: Add live URL">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                </a>
+                <a href="https://github.com/Webdeveloper-aneel" target="_blank"
+                   rel="noopener noreferrer" class="btn-project btn-project-outline">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-      <!-- Footer Section -->
-      <section class="footer-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="footer-div d-flex justify-content-between text-light px-3 py-4">
-                <p id="datetime" class="m-0"></p>
-                <p class="copy-right m-0">&copy; 2025 All Rights Reserved. | Thanks for visiting My Website!</p>
-                <p class="m-0">Designed by Aneel Khan with <i class="fa-solid fa-heart text-light"></i></p>
+        <!-- Project 2: The Voice of Vision Church Website -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="project-card" data-category="frontend">
+            <img class="project-card-img"
+                 src="./assets/images/project_img/The_Voice_of_vision_Church.jpeg"
+                 alt="The Voice of Vision Church Website" />
+
+            <div class="project-card-body">
+              <h4 class="project-card-title">Urdu Hindi Church Website</h4>
+              <p class="project-card-desc">
+                A fully responsive church website built using HTML, CSS, and Bootstrap,
+                showcasing church information, services, and member details with a clean
+                and welcoming design.
+              </p>
+
+              <div class="project-tech-badges">
+                <span class="project-tech-badge">HTML5</span>
+                <span class="project-tech-badge">CSS3</span>
+                <span class="project-tech-badge">Bootstrap</span>
+              </div>
+
+              <div class="project-card-actions">
+                <a href="https://webdeveloper-aneel.github.io/The_Voice_of_Vision_Church_web/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-project btn-project-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                </a>
+                <!-- TODO: Verify source URL -->
+                <a href="https://github.com/Webdeveloper-aneel/The_Voice_of_Vision_Church_web"
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-project btn-project-outline">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </footer>
+
+        <!-- Project 3: Bridges_Info -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="project-card" data-category="frontend">
+            <img class="project-card-img"
+                 src="./assets/images/project_img/Amazing_Bridges.png"
+                 alt="Bridges Info Project" />
+
+            <div class="project-card-body">
+              <h4 class="project-card-title">Bridges Info</h4>
+              <p class="project-card-desc">
+                An informational web project showcasing famous bridges around the world,
+                complete with descriptions, images, and structured data — built as a
+                first-semester academic project.
+              </p>
+
+              <!-- TODO: Verify technologies -->
+              <div class="project-tech-badges">
+                <span class="project-tech-badge">HTML5</span>
+                <span class="project-tech-badge">CSS3</span>
+                <span class="project-tech-badge">Bootstrap</span>
+              </div>
+
+              <div class="project-card-actions">
+                <a href="https://webdeveloper-aneel.github.io/Bridges_Info/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-project btn-project-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                </a>
+                <!-- TODO: Verify source URL -->
+                <a href="https://github.com/Webdeveloper-aneel/Bridges_Info"
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-project btn-project-outline">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /PROJECTS -->
 
 
-    <!-- Bootstrap JS File Link -->
-    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- JS File Link -->
-    <script src="./assets/js/java.js"></script>
-    <!-- Font Awesome JS Link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"></script>
-  </body>
+  <!-- ============================================================
+       SERVICES SECTION
+       ============================================================ -->
+  <section id="services" class="services-section">
+    <div class="container">
+
+      <div class="text-center mb-2 reveal">
+        <span class="section-label">What I Offer</span>
+        <h2 class="section-title">My Services</h2>
+        <p class="section-subtitle">Tailored web development and design services to bring your vision to life.</p>
+      </div>
+      <hr class="section-divider reveal" />
+
+      <div class="row g-4">
+
+        <!-- Service 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal">
+            <i class="fa-solid fa-desktop service-card-icon"></i>
+            <h4 class="service-card-title">Responsive Website Development</h4>
+            <p class="service-card-desc">
+              Build fast, mobile-friendly websites that look great and perform flawlessly
+              on all devices and screen sizes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal">
+            <i class="fa-brands fa-wordpress service-card-icon"></i>
+            <h4 class="service-card-title">WordPress Website Development</h4>
+            <p class="service-card-desc">
+              Custom WordPress sites with tailored themes, plugins, and functionality
+              designed to meet your specific business goals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal">
+            <i class="fa-solid fa-paintbrush service-card-icon"></i>
+            <h4 class="service-card-title">Website Redesign &amp; UI Improvements</h4>
+            <p class="service-card-desc">
+              Transform outdated websites into modern, professional digital experiences
+              that captivate users and reflect your brand.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal">
+            <i class="fa-solid fa-rocket service-card-icon"></i>
+            <h4 class="service-card-title">Landing Page Development</h4>
+            <p class="service-card-desc">
+              High-converting landing pages designed to engage visitors, communicate your
+              value, and drive measurable results.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal">
+            <i class="fa-solid fa-screwdriver-wrench service-card-icon"></i>
+            <h4 class="service-card-title">Website Maintenance</h4>
+            <p class="service-card-desc">
+              Ongoing support, updates, and performance optimisation for existing websites
+              — keeping your site fast, secure, and up-to-date.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal">
+            <i class="fa-solid fa-code service-card-icon"></i>
+            <h4 class="service-card-title">Frontend Development</h4>
+            <p class="service-card-desc">
+              Clean, semantic HTML/CSS/JavaScript interfaces with smooth interactions,
+              accessibility, and pixel-perfect attention to detail.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /SERVICES -->
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+
+      <div class="text-center mb-2 reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Have a project in mind? Let's build something great together.</p>
+      </div>
+      <hr class="section-divider reveal" />
+
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Left: Contact Info Card -->
+        <div class="col-lg-5 reveal">
+          <div class="contact-info-card">
+            <h3 class="contact-info-heading">Let's Work Together</h3>
+            <p class="contact-info-sub">
+              I'm always open to discussing new projects, creative ideas, or opportunities
+              to be part of an ambitious vision. Feel free to reach out!
+            </p>
+
+            <!-- Phone / WhatsApp -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-item-text">
+                <strong>Phone / WhatsApp</strong>
+                <a href="https://wa.me/923294007981" target="_blank" rel="noopener noreferrer">
+                  +92-329-4007981
+                </a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-item-text">
+                <strong>Email</strong>
+                <a href="mailto:aneelkhan748@gmail.com">aneelkhan748@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-item-text">
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/webdeveloper-aneel-04532634a"
+                   target="_blank" rel="noopener noreferrer">
+                  webdeveloper-aneel
+                </a>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-item-text">
+                <strong>GitHub</strong>
+                <a href="https://github.com/Webdeveloper-aneel"
+                   target="_blank" rel="noopener noreferrer">
+                  Webdeveloper-aneel
+                </a>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="social-icons-row">
+              <a href="https://www.linkedin.com/in/webdeveloper-aneel-04532634a"
+                 target="_blank" rel="noopener noreferrer"
+                 class="social-icon-btn" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Webdeveloper-aneel"
+                 target="_blank" rel="noopener noreferrer"
+                 class="social-icon-btn" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.behance.net/Webdeveloper_aneel"
+                 target="_blank" rel="noopener noreferrer"
+                 class="social-icon-btn" title="Behance">
+                <i class="fa-brands fa-behance"></i>
+              </a>
+              <a href="https://x.com/Webdeveloper_an"
+                 target="_blank" rel="noopener noreferrer"
+                 class="social-icon-btn" title="Twitter / X">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://web.facebook.com/profile.php?id=61576007315354"
+                 target="_blank" rel="noopener noreferrer"
+                 class="social-icon-btn" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/webdeveloper_aneel/"
+                 target="_blank" rel="noopener noreferrer"
+                 class="social-icon-btn" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/923294007981"
+                 target="_blank" rel="noopener noreferrer"
+                 class="social-icon-btn" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Contact Form Card -->
+        <div class="col-lg-7 reveal">
+          <div class="contact-form-card">
+
+            <form id="contact-form" novalidate>
+
+              <div class="row g-3">
+
+                <div class="col-sm-6">
+                  <div class="form-input-wrap">
+                    <label class="form-label" for="contact-name">Full Name</label>
+                    <input type="text" class="form-control" id="contact-name"
+                           placeholder="Your full name" autocomplete="name" />
+                    <span class="field-error" id="contact-name-error"></span>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-input-wrap">
+                    <label class="form-label" for="contact-email">Email Address</label>
+                    <input type="email" class="form-control" id="contact-email"
+                           placeholder="your@email.com" autocomplete="email" />
+                    <span class="field-error" id="contact-email-error"></span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-input-wrap">
+                    <label class="form-label" for="contact-subject">Subject</label>
+                    <input type="text" class="form-control" id="contact-subject"
+                           placeholder="What's this about?" />
+                    <span class="field-error" id="contact-subject-error"></span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-input-wrap">
+                    <label class="form-label" for="contact-message">Message</label>
+                    <textarea class="form-control" id="contact-message" rows="5"
+                              placeholder="Tell me about your project or idea..."></textarea>
+                    <span class="field-error" id="contact-message-error"></span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn-submit">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                  </button>
+                  <p class="form-mailto-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Note: Clicking <strong>Send Message</strong> will open your email
+                    application to complete sending.</span>
+                  </p>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /CONTACT -->
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Col 1: Brand -->
+        <div class="col-lg-4 col-md-6">
+          <a href="#home" class="footer-brand d-block mb-1">AK<span>.</span></a>
+          <p class="footer-tagline">
+            Crafting digital experiences with clean code and creative design.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-4 col-md-6">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Social -->
+        <div class="col-lg-4 col-md-6">
+          <p class="footer-heading">Follow Me</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/webdeveloper-aneel-04532634a"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Webdeveloper-aneel"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.behance.net/Webdeveloper_aneel"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" title="Behance">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+            <a href="https://x.com/Webdeveloper_an"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" title="Twitter / X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=61576007315354"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" title="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/webdeveloper_aneel/"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/923294007981"
+               target="_blank" rel="noopener noreferrer"
+               class="footer-social-btn" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom mt-5">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="footer-bottom-text mb-0">
+          &copy; <span id="footer-year"></span> Aneel Khan. All rights reserved.
+        </p>
+        <p class="footer-bottom-text mb-0">
+          Designed with ❤ by Aneel Khan
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- /FOOTER -->
+
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/java.js"></script>
+
+</body>
 </html>
-
-
-<!-- IGNORE -->
-
